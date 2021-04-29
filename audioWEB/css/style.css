@@ -65,7 +65,7 @@ body {
 
 .fon_sidebar_active {
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 3;
+  z-index: 3 !important;
 }
 
 .sidebar_open {
