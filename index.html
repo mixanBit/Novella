@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <title>Новелла</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="image/icon.ico"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="image/icon.ico">
+    <link rel="icon" type="image/x-icon" href="image/icon.ico">
+    <link rel="icon" sizes="64x64" href="image/icon.ico"/>
+
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="audioWEB/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body id="body">
+
+<!-- -----------------------------------------(Preloader)-------------------------------------- -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+<!-- -----------------------------------------(Sidebar)-------------------------------------- -->
+    <div class="fon_sidebar">
+      <div class="sidebar">
+        <div class="btn_sidebar"></div>
+
+        <div class="sidebar_main">
+          <div class="audio_player">
+            <h1>Audio</h1>
+            <div class="controls">
+              <div class="buttons">
+                <button id="prevAudio"></button>
+                <button id="playAudio"></button>
+                <button id="nextAudio"></button>
+              </div>
+              <input id="rangeAudio" type="range" min="0" max="100" value='30' onmousemove="rangevalue1.value=value">
+              <div class="volume">
+                <output id="rangevalue1">30</output>
+                <span>%</span>
+              </div>
+            </div>
+          </div>
+            <hr>
+        </div>
+      </div>
+    </div>
+
+
+<!-- -----------------------------------------(Стартовая страница)-------------------------------------- -->
+    <div class="start">
+      <div class="new_game">
+        <button class="btn_start">Начать игру</button>
+      </div>
+    </div>
+
+<!-- -----------------------------------------(Персонаж)-------------------------------------- -->
+    <div class="image">
+      <img class="img" src="" alt="">
+      <img class="img" src="" alt="">
+      <img class="img" src="" alt="">
+    </div>
+
+<!-- -----------------------------------------(Текст)-------------------------------------- -->
+    <div class="content">
+      <main>
+        <nav>
+          <h1 class="name">Энджи Йонага</h1>
+          <button class="btn"> &#10148;</button>
+        </nav>
+
+        <div class="text visible_text text1">Привет, давно не виделись </div>
+        <div class="text text1 oldtext" style="opacity: 0" >Привет, давно не виделись </div>
+      </main>
+    </div>
+
+<!-- -----------------------------------------(Ответвление)-------------------------------------- -->
+    <div class="alternative">
+      <div class="buttons">
+        <button class="btn_one" onclick="Variant(0)"></button>
+        <button class="btn_one" onclick="Variant(1)"></button>
+        <button class="btn_one" onclick="Variant(2)"></button>
+        <button class="btn_one" onclick="Variant(3)"></button>
+      </div>
+    </div>
+
+  <script src="scripts/preloader.js"></script>
+  <script src="audioWEB/scripts/sidebar.js"></script>
+  <script src="scripts/start.js"></script>
+  <script src="novel/narrative.js"></script>
+  <script src="novel/character.js"></script>
+  <script src="audioWEB/scripts/audioControls.js"></script>
+  <script src="audioWEB/scripts/musicArray.js"></script>
+  <script src="scripts/script.js"></script>
+  </body>
+</html>
